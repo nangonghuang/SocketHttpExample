@@ -138,7 +138,7 @@ public class HttpUrl {
         String host;
         int port;
         String path;
-        List<String> queryNamesAndValues;
+        List<String> queryNamesAndValues = new ArrayList<>();
 
         public Builder setSchema(String schema) {
             this.schema = schema;
@@ -197,6 +197,15 @@ public class HttpUrl {
                     temp = temp.substring(index + 1);
                     queryNamesAndValues = queryStringToNamesAndValues(temp);
                 }
+            }
+            return this;
+        }
+
+        public Builder addQueryParameter(String name, String value) {
+            try {
+                queryNamesAndValues.add(name + "=" + URLEncoder.encode(value, "UTF-8"));
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
             }
             return this;
         }

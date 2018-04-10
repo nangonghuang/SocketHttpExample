@@ -1,6 +1,8 @@
 package com.xckoohttp.net;
 
 
+import android.util.Log;
+
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
@@ -182,6 +184,8 @@ public class Call {
                     break;
                 }
             }
+
+            Log.i(TAG, "useSocketConnection: ************************************************");
             response.body = socket.getInputStream(); // 如果遇到头部带有chunked，还需要去掉字数行
         } catch (Exception e) {
             e.printStackTrace();
@@ -190,7 +194,6 @@ public class Call {
         }
         return response;
     }
-
 
     int next;
 
