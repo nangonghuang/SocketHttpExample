@@ -1,4 +1,4 @@
-package com.xckoohttp.net;
+package com.alan.net;
 
 /**
  * 起始行 : http报文第一行

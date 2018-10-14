@@ -1,4 +1,4 @@
-package com.xckoohttp.net;
+package com.alan.net;
 
 
 public class Mime {

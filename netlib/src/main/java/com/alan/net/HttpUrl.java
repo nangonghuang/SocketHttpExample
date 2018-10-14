@@ -1,4 +1,4 @@
-package com.xckoohttp.net;
+package com.alan.net;
 
 
 import java.io.UnsupportedEncodingException;
