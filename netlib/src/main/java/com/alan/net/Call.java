@@ -1,15 +1,8 @@
-package com.xckoohttp.net;
+package com.alan.net;
 
 
-import android.util.Log;
-
-import java.io.BufferedInputStream;
-import java.io.BufferedReader;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
@@ -185,7 +178,6 @@ public class Call {
                 }
             }
 
-            Log.i(TAG, "useSocketConnection: ************************************************");
             response.body = socket.getInputStream(); // 如果遇到头部带有chunked，还需要去掉字数行
         } catch (Exception e) {
             e.printStackTrace();

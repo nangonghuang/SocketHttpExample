@@ -2,11 +2,11 @@ package com.maitian.netlibrary;
 
 import android.util.Log;
 
-import com.xckoohttp.net.Call;
-import com.xckoohttp.net.Callback;
-import com.xckoohttp.net.Client;
-import com.xckoohttp.net.Request;
-import com.xckoohttp.net.Response;
+import com.alan.net.Call;
+import com.alan.net.Callback;
+import com.alan.net.Client;
+import com.alan.net.Request;
+import com.alan.net.Response;
 
 public class HttpManager {
     private final int connectTimeout = 15000;

@@ -1,4 +1,4 @@
-package com.xckoohttp.net;
+package com.alan.net;
 
 /*
  * Copyright (C) 2010 The Android Open Source Project

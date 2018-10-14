@@ -4,7 +4,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.support.annotation.NonNull;
 
-import com.xckoohttp.net.PlatForm;
+import com.alan.net.PlatForm;
 
 import java.util.concurrent.Executor;
 
